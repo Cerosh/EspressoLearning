@@ -1,0 +1,57 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context=".intent.IntentActivity">
+
+  <EditText
+      android:id="@+id/select_component_text_box"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"
+      android:hint="@string/name_hint"
+      android:inputType="textPersonName|textCapWords"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <Button
+      android:id="@+id/button_view_matchers"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"
+      android:text="@string/ViewMatcher"
+      android:onClick="goToIntentLandingActivity"
+      app:layout_constraintEnd_toStartOf="@+id/button_view_actions"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/select_component_text_box"/>
+
+  <Button
+      android:id="@+id/button_view_actions"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"
+      android:text="@string/ViewAction"
+      android:onClick="goToIntentLandingActivity"
+      app:layout_constraintEnd_toStartOf="@+id/button_view_assertions"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/button_view_matchers"
+      app:layout_constraintTop_toBottomOf="@id/select_component_text_box"/>
+
+  <Button
+      android:id="@+id/button_view_assertions"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"
+      android:text="@string/ViewAssertion"
+      android:onClick="goToIntentLandingActivity"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/button_view_actions"
+      app:layout_constraintTop_toBottomOf="@id/select_component_text_box"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

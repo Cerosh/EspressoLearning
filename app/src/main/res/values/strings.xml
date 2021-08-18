@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">EspressoLearning</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_label">Home</string>
+    <string name="activity_label">Activity View</string>
+    <string name="activity_button">Activity</string>
+    <string name="dialog_label">Dialog View</string>
+    <string name="dialog_button">Dialog</string>
+    <string name="dialog_message">Happy Learning</string>
+    <string name="positive_dialog_button">Continue</string>
+    <string name="negative_dialog_button">Cancel</string>
+    <string name="click_button">Click</string>
+    <string name="control_label">Control View</string>
+    <string name="text_box_label">Enter your name:</string>
+    <string name="control_input_text">Passion</string>
+    <string name="radio_button_male">Male</string>
+    <string name="radio_button_female">Female</string>
+    <string name="selected_radio_button">"Selected Radio Button</string>
+    <string name="selected_radio_button_label">"Selected Radio Button</string>
+    <string name="check_box_first_dose">First Dose</string>
+    <string name="check_box_second_dose">Second Dose</string>
+    <string name="selected_checkbox_button">"Selected Check Box</string>
+    <string name="selected_checkbox_label">"Selected Radio Box</string>
+    <string name="toggle_button_iPhone">iPhone</string>
+    <string name="toggle_button_android">Android</string>
+    <string name="control_button">Controls</string>
+    <string name="toast_matcher_label">Toast Matcher View</string>
+    <string name="toast_message">"Toast Message for learning Espresso"</string>
+    <string name="toast_matcher_button">Toast Message</string>
+    <string name="list_label">List View</string>
+    <string name="list_button">List </string>
+    <string name="recycler_view_label">Recycler View</string>
+    <string name="recycler_view_button">Recycler View</string>
+    <string name="mock_label">Mock View</string>
+    <string name="mock_button">Mock</string>
+    <string name="intent_label">Intents View</string>
+    <string name="intent_button">Intent</string>
+    <string name="resource_idling_label">Resource Idling View</string>
+    <string name="resource_idling_button">Resource Idling</string>
+    <string name="loading">Loading</string>
+    <string name="please_wait">Please wait</string>
+    <string name="done">Done</string>
+    <string name="spinner_label">Spinner View</string>
+    <string name="spinner_button">Spinner</string>
+    <string name="selected_item">The selected gesture is :</string>
+    <string-array name="gestures">
+        <item>scrollTo()</item>
+        <item>swipeLeft()</item>
+        <item>swipeRight()</item>
+        <item>swipeUp()</item>
+        <item>swipeDown()</item>
+    </string-array>
+    <string name="action_bar_label">Progress Bar View</string>
+    <string name="action_bar_button">Progress Bar</string>
+    <string name="date_time_picker_label">Date Time Picker View</string>
+    <string name="date_time_picker_button">Date Time Picker</string>
+
+    <string name="previous">Previous</string>
+    <string name="home_fragment_label">Welcome to Espresso Learning</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="name_hint">Pick the component of Espresso</string>
+    <string name="ViewMatcher">View Matchers</string>
+    <string name="ViewAction">View Actions</string>
+    <string name="ViewAssertion">View Assertions</string>
+    <string name="title_ideas">onView(ViewMatcher).perform(ViewAction).check(ViewAssertion)</string>
+
+    <string name="missing_theme">Missing theme</string>
+    <string name="unknown_theme">Sorry, no ideas for %1$s</string>
+
+    <string-array name="ViewMatcher">
+        <item>withId(…)</item>
+        <item>withText(…)</item>
+        <item>withTagKey(…)</item>
+        <item>withTagValue(…)</item>
+        <item>hasContentDescription(…)</item>
+        <item>withContentDescription(…)</item>
+        <item>withHint(…)</item>
+        <item>withSpinnerText(…)</item>
+        <item>hasLinks()</item>
+        <item>hasEllipsizedText()</item>
+        <item>hasMultilineTest()</item>
+    </string-array>
+
+    <string-array name="ViewAction">
+        <item>click()</item>
+        <item>doubleClick()</item>
+        <item>longClick()</item>
+        <item>pressBack()</item>
+        <item>pressIMEActionButton()</item>
+        <item>pressKey([int/EspressoKey])</item>
+        <item>pressMenuKey()</item>
+        <item>closeSoftKeyboard()</item>
+        <item>openLink()</item>
+    </string-array>
+
+    <string-array name="ViewAssertion">
+        <item>isLeftOf(Matcher)</item>
+        <item>isRightOf(Matcher)</item>
+        <item>isLeftAlignedWith(Matcher)</item>
+        <item>isRightAlignedWith(Matcher)</item>
+        <item>isAbove(Matcher)</item>
+        <item>isBelow(Matcher)</item>
+        <item>isBottomAlignedWith(Matcher)</item>
+        <item>isTopAlignedWith(Matcher)</item>
+    </string-array>
+
+</resources>

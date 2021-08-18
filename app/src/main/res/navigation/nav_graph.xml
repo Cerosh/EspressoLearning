@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.myapplication.espressolearning.HomeFragment"
+        android:label="@string/home_label"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_HomeFragment_to_ActivityFragment"
+            app:destination="@id/ActivityFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ActionBarFragment"
+            app:destination="@id/ActionBarFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_DialogFragment"
+            app:destination="@id/DialogFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ControlFragment"
+            app:destination="@id/ControlFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ToastMatcherFragment"
+            app:destination="@id/ToastMatcherFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_RecyclerFragment"
+            app:destination="@id/RecyclerFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_MockFragment"
+            app:destination="@id/MockFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_IntentFragment"
+            app:destination="@id/IntentFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ResourceIdlingFragment"
+            app:destination="@id/ResourceIdlingFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_SpinnerFragment"
+            app:destination="@id/SpinnerFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_DateTimePickerFragment"
+            app:destination="@id/DateTimePickerFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/ActivityFragment"
+        android:name="com.example.myapplication.espressolearning.ActivityFragment"
+        android:label="@string/activity_label"
+        tools:layout="@layout/activity_fragment">
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ActionBarFragment"
+        android:name="com.example.myapplication.espressolearning.ProgressBarFragment"
+        android:label="@string/action_bar_label"
+        tools:layout="@layout/progress_bar_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/DialogFragment"
+        android:name="com.example.myapplication.espressolearning.DialogFragment"
+        android:label="@string/dialog_label"
+        tools:layout="@layout/dialog_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/ControlFragment"
+        android:name="com.example.myapplication.espressolearning.ControlFragment"
+        android:label="@string/control_label"
+        tools:layout="@layout/control_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/ToastMatcherFragment"
+        android:name="com.example.myapplication.espressolearning.ToastMatcherFragment"
+        android:label="@string/toast_matcher_label"
+        tools:layout="@layout/toast_matcher_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="com.example.myapplication.espressolearning.ListFragment"
+        android:label="@string/list_label"
+        tools:layout="@layout/list_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/RecyclerFragment"
+        android:name="com.example.myapplication.espressolearning.recyclerView.RecyclerFragment"
+        android:label="@string/recycler_view_label"
+        tools:layout="@layout/recycler_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/MockFragment"
+        android:name="com.example.myapplication.espressolearning.MockFragment"
+        android:label="@string/mock_label"
+        tools:layout="@layout/mock_fragment">
+    </fragment>
+    <activity
+        android:id="@+id/IntentFragment"
+        android:name="com.example.myapplication.espressolearning.intent.IntentActivity"
+        android:label="@string/intent_label"
+        tools:layout="@layout/intent_activity">
+    </activity>
+    <fragment
+        android:id="@+id/ResourceIdlingFragment"
+        android:name="com.example.myapplication.espressolearning.ResourceIdlingFragment"
+        android:label="@string/resource_idling_label"
+        tools:layout="@layout/resource_idling_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/SpinnerFragment"
+        android:name="com.example.myapplication.espressolearning.SpinnerFragment"
+        android:label="@string/spinner_label"
+        tools:layout="@layout/spinner_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/DateTimePickerFragment"
+        android:name="com.example.myapplication.espressolearning.DateTimePickerFragment"
+        android:label="@string/date_time_picker_label"
+        tools:layout="@layout/date_time_picker_fragment">
+    </fragment>
+
+</navigation>
