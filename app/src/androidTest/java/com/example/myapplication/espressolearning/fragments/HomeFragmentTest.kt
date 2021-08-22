@@ -1,14 +1,21 @@
 package com.example.myapplication.espressolearning.fragments
 
+import android.view.View
+import android.widget.TextView
 import androidx.fragment.app.testing.FragmentScenario
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.lifecycle.Lifecycle
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.UiController
+import androidx.test.espresso.ViewAction
+import androidx.test.espresso.ViewInteraction
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.myapplication.espressolearning.HomeFragment
 import com.example.myapplication.espressolearning.R
+import org.junit.Assert.assertEquals
+import org.hamcrest.Matcher
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -37,5 +44,30 @@ fun setup(){
         onView(withId(R.id.progress_bar_button)).check(matches(withText(R.string.action_bar_button)))
         onView(withId(R.id.date_time_picker_button)).check(matches(withText(R.string.date_time_picker_button)))
 
+    }
+    @Test
+    fun gettingTestFromTheScreen(){
+        val homeTitleVI: ViewInteraction = onView(withId(R.id.home_title))
+        assertEquals("Welcome to Espresso Learning", getText(homeTitleVI))
+    }
+
+    private fun getText(matcher: ViewInteraction): String {
+        var text = String()
+        matcher.perform(object : ViewAction {
+            override fun getConstraints(): Matcher<View> {
+                return isAssignableFrom(TextView::class.java)
+            }
+
+            override fun getDescription(): String {
+                return "Text of the view"
+            }
+
+            override fun perform(uiController: UiController, view: View) {
+                val tv = view as TextView
+                text = tv.text.toString()
+            }
+        })
+
+        return text
     }
 }
