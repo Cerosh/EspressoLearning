@@ -42,14 +42,17 @@ class ProgressBarFragment : Fragment() {
                     i += 5
                     handler.post(Runnable {
                         progressBar!!.progress = i
+
                         txtView!!.text = i.toString() + "/" + progressBar!!.max
                     })
 
                     try {
+                        Thread.sleep(100)
                     } catch (e: InterruptedException) {
                         e.printStackTrace()
                     }
                 }
+
                 progressBar!!.visibility = View.INVISIBLE
             }).start()
 

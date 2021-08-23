@@ -8,27 +8,6 @@
     android:orientation="vertical"
     tools:context=".recyclerView.RecyclerFragment">
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/recycler_textview"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginBottom="43dp"-->
-    <!--        app:layout_constraintBottom_toTopOf="@+id/recyclerview"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-    <!--    <Button-->
-    <!--        android:id="@+id/buttonForRecyclerView"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginStart="16dp"-->
-    <!--        android:layout_marginBottom="14dp"-->
-    <!--        android:layout_weight="1"-->
-    <!--        android:text="Click For Recycler view"-->
-    <!--        app:layout_constraintBottom_toTopOf="@+id/recyclerview"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
